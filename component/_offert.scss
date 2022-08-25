@@ -1,0 +1,68 @@
+.offert{
+    display: flex;
+    width: 100%;
+    color: #fff;
+    font-size: 1.8rem;
+    
+    &__content{
+        padding-top: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 80px 0px;
+
+        @media(max-width:798px) {
+             flex-direction: column;
+         }
+        
+        .card{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            flex-basis: 31%;
+            text-align: center;
+            margin: 0 auto;
+            gap: 30px;
+            padding: 15px 20px;
+            border-radius: 3px;
+            border-bottom: 4px solid rgb(50, 160, 68) ;
+            transition: 0.4s ease-in-out;
+            cursor: pointer;
+
+            @media(max-width:798px) {
+                                
+            }
+
+            &:hover{
+                background-color:  rgb(50, 160, 68);
+            }
+
+            &__img{
+                width: 80px;
+                height: 80px;
+            }
+
+            &__title{
+                color: red;
+                font-size: 1.3rem;
+                font-family: sans-serif;
+                color: #fff;
+            }
+            
+            &__info{
+                font-family: sans-serif;
+                padding-top: 18px;
+                font-size: 1.2rem;
+                line-height: 30px;
+                padding-top: 10px;
+                letter-spacing: 2px;
+                color: rgb(236, 233, 233);
+                text-align: left;
+                font-weight:100;
+            }
+
+        }
+    }
+}

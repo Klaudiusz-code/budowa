@@ -1,0 +1,101 @@
+.home {
+
+    .baner {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+   
+        background-image:
+            linear-gradient(45deg,
+                rgba(0, 0, 0, 0.75),
+                rgba(47, 47, 54, 0.75)), url('img/back1.jpg');
+        background-position: center;
+        background-size: cover;
+        min-height: 100vh;
+        
+
+        &__info {
+            margin-top: 210px;
+            color: white;
+            text-align: center;
+            letter-spacing: 1px;
+
+            &__line {
+                width: 40%;
+                height: 5px;
+                background-color: rgb(50, 160, 68);
+                margin: auto;
+                border-radius: 10px;
+            }
+
+            &__title {
+                font-size: 4rem;
+                padding-top: 5px;
+                font-family: 'Roboto', sans-serif;
+                margin-bottom: 5px;
+
+
+                @media(max-width:798px) {
+                    font-size: 3rem;
+                    letter-spacing: 1px;
+                    padding: 5px;
+                }
+            }
+
+            &__par {
+                margin-top: 20px;
+                letter-spacing: 2px;
+                font-size: 1.5rem;
+                color: rgb(189, 184, 184);
+
+                @media(max-width:798px) {
+                    font-size: 1.2rem;
+                    padding: 5px;
+                    line-height: 40px;
+                    letter-spacing: 2px;
+                }
+            }
+
+            &__contact {
+                padding-top: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 30px;
+
+                @media(max-width:798px) {
+                    gap: 8px;
+                }
+
+                &__phone {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+
+                    i {
+                        color: rgb(50, 160, 68);
+
+                        @media(max-width:798px) {
+                            font-size: 23px;
+                        }
+                    }
+                }
+
+                &__email {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+
+                    i {
+                        color: rgb(50, 160, 68);
+
+                        @media(max-width:798px) {
+                            font-size: 23px;
+                        }
+                    }
+                }
+            }
+        }
+      
+    }
+}

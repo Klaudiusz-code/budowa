@@ -1,0 +1,90 @@
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: #222;
+    transition: 0.3s ease-in-out;
+
+   
+
+    &__logo{
+        color: rgb(231, 241, 233);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        letter-spacing: 3px;
+        font-family: sans-serif;
+
+     
+     &__title{
+            font-size: 1.8rem;
+        }
+    }
+
+    &__button{
+        display: none;
+
+        @media(max-width:798px){
+            display: block;
+        }
+
+        i{
+            font-size: 33px;
+            color: rgb(50, 160, 68);
+        }
+        
+    }
+    &__menu{
+        display: flex;        
+        @media(max-width:798px){
+            width: 60%;
+            height: 100vh;
+            gap: 25px;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: absolute;
+            left: -200%;
+            top: 0;
+            background-color: #222;
+            transition: 0.2s ease-out;
+
+        }
+
+        &__link{
+        
+            font-family: 'Poppins', Arial, Helvetica, sans-serif;
+
+         display: block;
+         padding: 10px;
+         margin: 0 10px;
+         transition: 0.2s ease-in;
+         border-radius: 2px;
+         color: whitesmoke;
+
+         &:hover{
+            background-color: rgb(131, 182, 49);
+            color: white;
+         }
+       
+         
+        }
+    }
+}
+.--active{
+            background-color: rgb(131, 182, 49);
+}
+.show-hidden{
+    left: 0;
+}
+.sticky-header{
+    padding: 10px;
+}
