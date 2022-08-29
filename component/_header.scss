@@ -10,6 +10,7 @@
     margin: 0 auto;
     background-color: #222;
     transition: 0.3s ease-in-out;
+    z-index: 999;
 
    
 
@@ -61,8 +62,7 @@
 
         &__link{
         
-            font-family: 'Poppins', Arial, Helvetica, sans-serif;
-
+        font-weight: 100;
          display: block;
          padding: 10px;
          margin: 0 10px;
@@ -87,4 +87,5 @@
 }
 .sticky-header{
     padding: 10px;
+    background-color: rgb(63, 68, 64);
 }

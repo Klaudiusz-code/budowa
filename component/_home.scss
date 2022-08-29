@@ -15,7 +15,7 @@
         
 
         &__info {
-            margin-top: 210px;
+            margin-top: 250px;
             color: white;
             text-align: center;
             letter-spacing: 1px;
@@ -31,7 +31,6 @@
             &__title {
                 font-size: 4rem;
                 padding-top: 5px;
-                font-family: 'Roboto', sans-serif;
                 margin-bottom: 5px;
 
 
@@ -62,6 +61,7 @@
                 align-items: center;
                 justify-content: center;
                 gap: 30px;
+                font-weight: 200;
 
                 @media(max-width:798px) {
                     gap: 8px;

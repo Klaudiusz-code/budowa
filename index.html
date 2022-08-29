@@ -1,78 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
-    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css"/> 
+
 </head>
+
 <body>
-        <!--      Header          -->
-       <section class="header">
+    <!--      Header          -->
+    <section class="header">
         <div class="header__logo">
-       <h1 class="header__logo__title">TestBud.pl</h1>
-    </div>
+            <h1 class="header__logo__title">TestBud.pl</h1>
+        </div>
         <ul class="header__menu" id="nav-menu">
             <li><a href="#" class="header__menu__link --active">Strona Główna</a></li>
             <li><a href="#offerts" class="header__menu__link">Oferta</a></li>
-            <li><a href="#" class="header__menu__link">Realizacje</a></li>
+            <li><a href="#realisation" class="header__menu__link">Realizacje</a></li>
             <li><a href="#" class="header__menu__link">O Nas</a></li>
             <li><a href="#" class="header__menu__link">Kontakt</a></li>
         </ul>
         <div class="header__button" id="nav-toggle">
             <i class='bx bx-menu'></i>
         </div>
-       </section>
-        <!---      Home         -->
-       <section class="home" id="home">
-            <div class="baner">
-               <div class="baner__info">
-                    <h1 class="baner__info__title">TestBud.pl</h1>
-                    <div class="baner__info__line"></div>
-                    <p class="baner__info__par">Chcesz wybudować dom? Z nami to naprawdę proste.</p>
+    </section>
+    <!---      Home         -->
+    <section class="home" id="home">
+        <div class="baner">
+            <div class="baner__info">
+                <h1 class="baner__info__title">TestBud.pl</h1>
+                <div class="baner__info__line"></div>
+                <p class="baner__info__par">Chcesz wybudować dom? Z nami to naprawdę proste.</p>
 
-                    <div class="baner__info__contact">
-                        <span class="baner__info__contact__phone"><i class='bx bxs-phone-call'></i> +48 222 222 222</span>
-                        <span class="baner__info__contact__email"><i class='bx bx-envelope' ></i> Test@gmail.com</span>
-                    </div>
-                    
-               </div>
-             
+                <div class="baner__info__contact">
+                    <span class="baner__info__contact__phone"><i class='bx bxs-phone-call'></i> +48 222 222 222</span>
+                    <span class="baner__info__contact__email"><i class='bx bx-envelope'></i> Test@gmail.com</span>
+                </div>
+
             </div>
-           
-       </section>
 
-       <!--         OFFERTY         -->
-       <section class="offert" id="offerts">
+        </div>
+
+    </section>
+
+    <!--         OFFERTY         -->
+    <section class="offert" id="offerts">
 
         <div class="offert__content">
             <div class="card"><img src="/img/1.png" class="card__img" alt="">
                 <h1 class="card__title">SZYBKI PROJEKT DOMU</h1>
                 <p class="card__info">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia in possimus doloribus enim debitis voluptas accusantium dolor animi odit sequi adipisicing elit. Mollitia in possimus.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia in possimus doloribus enim
+                    debitis voluptas accusantium dolor animi odit sequi adipisicing elit. Mollitia in possimus.
                 </p>
             </div>
             <div class="card"><img src="/img/2.png" class="card__img" alt="">
                 <h1 class="card__title">POZWOLENIE NA BUDOWĘ</h1>
                 <p class="card__info">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia in possimus doloribus enim debitis voluptas accusantium dolor animi odit sequi adipisicing elit. Mollitia in possimus.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia in possimus doloribus enim
+                    debitis voluptas accusantium dolor animi odit sequi adipisicing elit. Mollitia in possimus.
                 </p>
             </div>
             <div class="card"><img src="/img/3.png" class="card__img" alt="">
                 <h1 class="card__title">WYSOKA JAKOŚĆ</h1>
                 <p class="card__info">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia in possimus doloribus enim debitis voluptas accusantium dolor animi odit sequi adipisicing elit. Mollitia in possimus.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia in possimus doloribus enim
+                    debitis voluptas accusantium dolor animi odit sequi adipisicing elit. Mollitia in possimus.
                 </p>
             </div>
         </div>
-       </section>
+    </section>
 
-       <section class="realisation" id="realisation">
+    <!--            Realisation             -->
+    <section class="realisation" id="realisation">
 
-       </section>
-       <script src="/js/main.js"></script>
+        <div class="realisation__content">
+            <div class="left">
+
+                <h1 class="left__title">Realizacje</h1>
+                <p class="left__info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia ex maiores reiciendis porro, quibusdam voluptate delectus odio harum similique? Voluptatum ad eum quaerat!</p>
+
+
+            </div>
+            <div class="right">
+                <div class="right__window"><i class='bx bx-plus'></i></div>
+                <div class="right__door"><i class='bx bx-plus'></i></div>
+                <div class="right__solar"><i class='bx bx-plus'></i></div>
+                <div class="right__flooring"><i class='bx bx-plus'></i></div>
+                <div class="right__roof"><i class='bx bx-plus'></i></div>
+                <img src="/img/dom.webp" alt="" class="right__img">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="/js/main.js"></script>
 </body>
+
 </html>

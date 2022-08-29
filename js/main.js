@@ -26,3 +26,59 @@ window.addEventListener('scroll', ()=>{
     const header = document.querySelector('.header');
     header.classList.toggle('sticky-header', window.scrollY > 0);
 });
+
+
+
+//   TOLLTIP
+tippy('.right__window', {
+    content: 'Sprzedaż i montaż Okien',
+    placement: 'top',
+    arrow: true,
+    arrowType: 'round',
+    animation: 'perspective',
+    theme: 'light',
+
+
+  });
+tippy('.right__door', {
+    content: 'Sprzedaż i montaż drzwi',
+    placement: 'top',
+    arrow: true,
+    arrowType: 'round',
+    animation: 'perspective',
+    theme: 'light',
+
+
+  });
+tippy('.right__solar', {
+    content: 'Montaż baterii słonecznych',
+    placement: 'top',
+    arrow: true,
+    arrowType: 'round',
+    animation: 'perspective',
+    theme: 'light',
+
+
+  });
+
+  tippy('.right__flooring', {
+    content: 'Posadzki',
+    placement: 'top',
+    arrow: true,
+    arrowType: 'round',
+    animation: 'perspective',
+    theme: 'light',
+
+
+  });
+
+tippy('.right__roof', {
+    content: 'Pokrycia Dachowe',
+    placement: 'top',
+    arrow: true,
+    arrowType: 'round',
+    animation: 'perspective',
+    theme: 'light',
+
+
+  });
