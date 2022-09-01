@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 
 <head>
     <meta charset="UTF-8">
@@ -15,6 +15,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css"/> 
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"/>
+	<script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"></script>
 
 </head>
 
@@ -28,8 +30,8 @@
             <li><a href="#" class="header__menu__link --active">Strona Główna</a></li>
             <li><a href="#offerts" class="header__menu__link">Oferta</a></li>
             <li><a href="#realisation" class="header__menu__link">Realizacje</a></li>
-            <li><a href="#" class="header__menu__link">O Nas</a></li>
-            <li><a href="#" class="header__menu__link">Kontakt</a></li>
+            <li><a href="#about" class="header__menu__link">O Nas</a></li>
+            <li><a href="#contact" class="header__menu__link">Kontakt</a></li>
         </ul>
         <div class="header__button" id="nav-toggle">
             <i class='bx bx-menu'></i>
@@ -105,7 +107,61 @@
         </div>
 
     </section>
+    <section class="about" id="about">
+        <div class="about__content">
+            <div class="box">
+                <div class="box__title">O nas</div>
+                <div class="box__line"></div>
+                <div class="box__info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta alias saepe fuga dolorum laboriosam vel culpa omnis. Placeat at doloremque repellendus cupiditate, neque quibusdam, dignissimos voluptatibus voluptatem obcaecati beatae alias veritatis distinctio. Labore architecto itaque, porro distinctio, harum laudantium enim sunt reiciendis iure fuga adipisci amet nesciunt quidem. Quaerat, eum!</div>
+                <a href="#offerts" class="box__button">Oferty</a>
+            </div>
+        </div>
+    </section>
+    <seciton class="contact" id="contact">
+        <div class="contact__content">
 
+            <div class="box-contact">
+                <i class='bx bx-phone --box-icon'></i>
+                <p class="box-contact__info">Lorem ipsum dolo</p>
+                <span class="box-contact__tit">+48 000 000 00</span>
+            </div>
+            <div class="box-contact">
+                <i class='bx bxs-location-plus --box-icon'></i>
+                <p class="box-contact__info">Lorem ipsum dolor.</p>
+                <span class="box-contact__tit">LUBLIN / LUBELSKIE</span>
+
+            </div>
+            <div class="box-contact">
+                <i class='bx bx-envelope --box-icon'></i>
+                <p class="box-contact__info">Lorem ipsum dolor</p>
+                <p class="box-contact__tit">TestBud@gmail.com</p>
+
+            </div>
+           
+            
+        </div>
+
+        <div class="map">
+
+            <div id="map"></div>
+        </div>
+    </seciton>
+
+    <section class="footer">
+
+        <div class="footer__center">
+            <h1 class="footer__center__logo">
+                TestBud.pl
+            </h1>
+            <ul class="footer__center__menu">
+                <li><a href="#home" class="footer__center__menu__item">Strona Główna</a></li>
+                <li><a href="#offerts" class="footer__center__menu__item">Oferty</a></li>
+                <li><a href="#realisation" class="footer__center__menu__item">Realizacje</a></li>
+                <li><a href="#about" class="footer__center__menu__item">O Nas</a></li>
+            </ul>
+        </div>
+
+    </section>
 
     <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
     <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>

@@ -3,6 +3,7 @@
     width: 100%;
     color: #fff;
     font-size: 1.8rem;
+    padding: 40px 0px;
     
     &__content{
         padding-top: 120px;
@@ -36,7 +37,7 @@
             }
 
             &:hover{
-                background-color:  rgb(50, 160, 68);
+                background-color: rgb(50, 160, 68);
             }
 
             &__img{

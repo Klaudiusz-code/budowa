@@ -82,3 +82,25 @@ tippy('.right__roof', {
 
 
   });
+
+
+
+  //      MAP
+
+
+
+  	const map = L.map('map').setView([51.505, -0.09], 13);
+
+			L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZGFlZGhlbGlsIiwiYSI6ImNsMnEyNTRqejFtaGYzaW11MGI1cnk1NzkifQ.AxrAeoug_z3UjYaUqJUhJg', {
+				maxZoom: 18,
+				id: 'mapbox/streets-v11',
+				tileSize: 512,
+				zoomOffset: -1,
+        zoomControl: false,
+			}).addTo(map);
+
+      // Zoom to 9 when clicking on marker
+map.event.addListener(marker,'click',function() {
+  map.setZoom(9);
+  map.setCenter(marker.getPosition());
+});

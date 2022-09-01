@@ -71,7 +71,7 @@
          color: whitesmoke;
 
          &:hover{
-            background-color: rgb(131, 182, 49);
+            background-color: rgb(50, 160, 68);
             color: white;
          }
        
@@ -80,7 +80,8 @@
     }
 }
 .--active{
-            background-color: rgb(131, 182, 49);
+    background-color: rgb(50, 160, 68);
+
 }
 .show-hidden{
     left: 0;
